@@ -1,0 +1,326 @@
+html {
+  height: 100%;
+  margin: auto;
+  max-width: 2000px;
+  background: #121213;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  /* fallback for old browsers */
+  background: #00b09b;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 176, 155, 1),
+    rgba(150, 201, 61, 1)
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(0, 176, 155, 1),
+    rgba(150, 201, 61, 1)
+  );
+  /*border: 1px solid purple;*/
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+#channelInput{
+  background-color: #5a5959;
+  color:#00b09b;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10%;
+ border-right-color: white;
+
+
+
+}
+
+#channelInput:hover {
+  background-color: rgb(59, 59, 59);
+}
+#channelInput:active {
+  background-color: rgb(158, 157, 157);
+}
+
+.gradient-custom {
+  min-height: 100%;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.theApp {
+  color: rgb(169, 169, 173);
+  /*border: 1px solid blue;*/
+}
+
+.theBody {
+  /*border: 1px solid rgb(255, 0, 234);*/
+  min-height: 100%;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  top: 57px;
+  left: 0;
+}
+
+.theAppLeft {
+  min-height: 100%;
+  min-width: 50px;
+  width: 65%;
+  height: 1900px;
+  color: rgb(134, 134, 134);
+  /*border: 3px solid #282c34;*/
+	float:left;
+}
+
+.theAppRight {
+	/*border: 3px solid #282c34;*/
+	width: 33%;
+	height: 1900px;
+	overflow: hidden;
+	margin-top: 4%;
+}
+
+.chatChannelName {
+	color: #00b09b;
+	padding-top: 1%;
+}
+
+.chatBox {
+	background-color: #282c34;
+	color: rgb(169, 169, 173);
+}
+
+.messageList {
+	max-height: 700px;
+	height: 700px;
+	background-color: #282c34;
+	color: rgb(169, 169, 173);
+  /* display: flex; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.messageList::-webkit-scrollbar {
+  width: 5px;
+  overflow: hidden;
+  height: 50%;
+}
+
+.messageList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.messageList::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.theNavBar {
+  border-bottom: 2px solid black;
+}
+
+.theHomepage {
+  /*border: 1px solid red;*/
+  height: 2500px;
+  width: 100%;
+}
+
+.theHomepage::-webkit-scrollbar {
+  display: none;
+}
+
+.widgetBlock-lrg {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 300px;
+  background-color: #282c34;
+  margin-top: 2%;
+  font-size: medium;
+  position: relative;
+}
+
+.widgetBlock-med {
+  /*border: 1px solid red;*/
+  width: 40%;
+  height: 400px;
+  background-color: #282c34;
+  font-size: medium;
+  position: relative;
+}
+
+.widgetBlock-sml {
+  /*border: 1px solid red;*/
+  width: 20%;
+  height: 200px;
+  background-color: #282c34;
+  font-size: small;
+  position: relative;
+}
+
+.widgetBlock-very-sml {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100px;
+  background-color: #0f1013;
+  font-size: small;
+  position: relative;
+}
+
+.widgetBlock-welcome {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 300px;
+	margin-top: -1.4%;
+  background-color: #282c34;
+  font-size: medium;
+  position: relative;
+}
+
+.widgetBlock-account {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 1800px;
+  background-color: #282c34;
+  margin-top: 2%;
+  font-size: medium;
+  position: relative;
+}
+
+.widgetBlock-Game {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 900px;
+  background-color: #282c34;
+  margin-top: 2%;
+  font-size: medium;
+  position: relative;
+}
+
+.widgetBlock-reg {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 350px;
+  background-color: #282c34;
+  margin-top: 2%;
+  font-size: medium;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+   .widgetBlock-lrg, .widgetBlock-med, .widgetBlock-sml, .widgetBlock-account {
+	 margin-top: 15%;
+   }
+   .theFooter {
+	 margin-top: 30%;
+   }
+	 .widgetBlock-Game {
+		 height: 950px;
+	 }
+}
+
+.leftAligned {
+  float: left;
+}
+.rightAligned {
+  float: right;
+  margin-left: 8.2%;
+}
+.centerAligned {
+  float: center;
+	margin-left: 8.2%;
+}
+.moveLeft {
+	margin-left: 7%;
+	margin-top: 2%;
+}
+
+.theFooter {
+  /*border-top: 2px solid black;*/
+  /*height: auto;*/
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #343A40;
+   color: white;
+   text-align: center;
+	 border-top: 2px solid black;
+}
+
+.responsive-text-lrg {
+  font-size:2vw;
+}
+
+.responsive-text-med {
+  font-size:1vw;
+}
+
+.test {
+	border-top: 2px solid rgb(104, 7, 7);
+}
+
+
+.gameTable {
+	margin-top: 5%;
+}
+
+.theadStyle {
+	background-color: #141518;
+	color: #02A48F;
+}
+
+#selectGame {
+	width: 100%;
+}
+
+#selectHost {
+	float: center;
+}
+
+.hosting {
+	float: center;
+	margin-top: 5%;
+}
+
+.navLogo {
+	color: #00b09b;
+}
+
+.highlightGreen {
+	color: #02A48F;
+}
